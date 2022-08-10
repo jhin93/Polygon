@@ -1,0 +1,33 @@
+요약본 : https://github.com/jenks-guo-filecoin/nftschool.dev-demo
+설명본 : https://nftschool.dev/tutorial/mint-nftstorage-polygon/#preparation
+
+
+====== 초록무늬 nft 발행과정 ======
+
+➜  nftschool git:(master) ✗ node scripts/store-asset.mjs
+Metadata stored on Filecoin and IPFS with URL: ipfs://bafyreiesbkaa4bphh3pb2qemhlupb7si457gjz4octoubqulnvejdugq34/metadata.json
+
+
+Contract deployed to address: 0x96dF1c0379eC70f2213717d0ef1b016240860d02
+
+
+➜  nftschool git:(master) ✗ npx hardhat run scripts/mint-nft.mjs --network PolygonMumbai
+NFT minted to:  0x60255c6De2cf768D5cE89f54eDb42D4E374a3177
+
+
+
+
+
+===== 만년필 nft 발행과정 =====
+
+
+➜  nftschool git:(master) ✗ node scripts/store-asset.mjs
+Metadata stored on Filecoin and IPFS with URL: ipfs://bafyreidjtqcllzoeqqk6ctzbnbw2yurkzmdq5iin6e4wqikoanflorsgj4/metadata.json
+
+➜  nftschool git:(master) ✗ npx hardhat run scripts/deploy-contract.mjs --network PolygonMumbai
+Contract deployed to address: 0x98B3273c57715997D0dFBE05e41736e905876bEc
+
+
+➜  nftschool git:(master) ✗ npx hardhat run scripts/mint-nft.mjs --network PolygonMumbai
+NFT minted to:  0x60255c6De2cf768D5cE89f54eDb42D4E374a3177
+
