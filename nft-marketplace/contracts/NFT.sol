@@ -6,9 +6,23 @@ import "../node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721UR
 import "../node_modules/@openzeppelin/contracts/utils/Counters.sol";
 
 contract NFT is ERC721URIStorage {
-    using Counters for Counters.Counter; // using..for.. 해석필요. 라이브러리(Counters) 사용법같음.
-    Counters.Counter private _tokenIds // 해석필요. 변수설정 방식인 듯
-    
+    using Counters for Counters.Counter;
+    Counters.Counter private _tokenIds;
+    address contractAddress;
+
+    constructor(address marketplaceAddress) ERC721("Metaverse Tokens", "METT") {
+        contractAddress = marketplaceAddress;
+    }
+
+    function createToken(string memory tokenURI) public returns (uint) {
+        _tokenIds.increment();
+        uint256 newItemId = _tokenIds.current();
+
+        _mint(msg.sender, newItemId);
+        _setTokenURI(newItemId, tokenURI);
+        setApprovalForAll(contractAddress, true);
+        return newItemId;
+    }
 }
 
 
