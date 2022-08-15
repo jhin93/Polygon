@@ -23,4 +23,3 @@ https://www.youtube.com/watch?v=GKJBEEXUha0&list=LL&index=7
 
 ## docs
 - polygon testnet : https:w//docs.polygon.technology/docs/develop/network-details/network/#mumbai-pos-testnet
-
