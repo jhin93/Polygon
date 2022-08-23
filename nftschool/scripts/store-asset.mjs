@@ -9,10 +9,10 @@ async function storeAsset() {
    const client = new NFTStorage({ token: API_KEY })
    const metadata = await client.store({
        name: 'ExampleNFT',
-       description: 'My ExampleNFT is an awesome artwork!',
+       description: 'This is test NFT for download link',
        image: new File(
-           [await fs.promises.readFile('assets/fountainpen.png')],
-           'fountainpen.png',
+           [await fs.promises.readFile('assets/bgblack.jpeg')],
+           'bgblack.png',
            { type: 'image/png' }
        ),
    })
