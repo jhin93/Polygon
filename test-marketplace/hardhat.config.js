@@ -7,9 +7,9 @@ module.exports = {
     hardhat: {
       chainId: 1337
     },
-//  unused configuration commented out for now
+// //  unused configuration commented out for now
 //  mumbai: {
-//    url: "https://rpc-mumbai.maticvigil.com",
+//    url: `https://polygon-mumbai.infura.io/v3/${process.env.projectId}`,
 //    accounts: [process.env.privateKey]
 //  }
   },
