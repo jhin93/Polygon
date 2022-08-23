@@ -8,11 +8,11 @@ const API_KEY = process.env.NFT_STORAGE_API_KEY
 async function storeAsset() {
    const client = new NFTStorage({ token: API_KEY })
    const metadata = await client.store({
-       name: 'Jhin_zprj_NFT',
-       description: 'https://drive.google.com/file/d/1TQCu3YkKUJXAL6nuH32GNqlbvx53713j/view?usp=sharing',
+       name: 'ExampleNFT',
+       description: 'testtesttest',
        image: new File(
-           [await fs.promises.readFile('assets/zprj.png')],
-           'zprj.png',
+           [await fs.promises.readFile('assets/bgblack.png')],
+           'bgblack.png',
            { type: 'image/png' }
        ),
    })
