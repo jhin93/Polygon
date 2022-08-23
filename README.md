@@ -17,6 +17,9 @@ Polygon solution 개발을 테스트하는 공간입니다.
 npm install ethers hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers web3modal @openzeppelin/contracts ipfs-http-client axios
 (web3modal은 유저에게 지갑 선택지를 주는 권한 라이브러리)
 
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npx tailwindcss init -p
+
 ### Article
 https://dev.to/edge-and-node/building-scalable-full-stack-apps-on-ethereum-with-polygon-2cfb
 
