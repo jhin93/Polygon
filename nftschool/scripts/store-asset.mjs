@@ -9,7 +9,7 @@ async function storeAsset() {
    const client = new NFTStorage({ token: API_KEY })
    const metadata = await client.store({
        name: 'ExampleNFT',
-       description: 'testtesttest',
+       description: 'https://drive.google.com/file/d/1TQCu3YkKUJXAL6nuH32GNqlbvx53713j/view?usp=sharing',
        image: new File(
            [await fs.promises.readFile('assets/bgblack.png')],
            'bgblack.png',
